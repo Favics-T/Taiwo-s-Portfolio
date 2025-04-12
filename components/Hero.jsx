@@ -6,7 +6,7 @@ const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfa
 
 const Hero = () => {
   return (
-    <div className='px-10 mt-12 text-gray-300 flex flex-col gap-4 '>
+    <div className='p-6 mt-12 md:w-[1000p] text-gray-300 flex flex-col gap-4 '>
         <h1 className=" font-bold text-[#7F5AF0] ">Hi, my name is</h1>
         <h1 className="text-5xl font-bold ">Kolapo Faith Taiwo.</h1>
         <h1 className="text-3xl font-bold">Frontend Web Developer</h1>
