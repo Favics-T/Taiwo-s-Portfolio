@@ -1,14 +1,14 @@
 {
   "name": "portfolio",
-  "homepage": "https://Favics-T.github.io/Taiwo-s-Portfolio",
-  "version": "0.1.0",
+   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "export":"next export",
+    "predeploy": "npm run build && npm run export",
+    "deploy": "gh-pages -d out",
     "lint": "next lint"
   },
   "dependencies": {
