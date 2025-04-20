@@ -7,9 +7,9 @@ const ResumePage = () => {
   const resumeData = {
     name: "Kolapo Faith Taiwo.",
     email: "taiwopersonal24@example.com",
-    skills: "JavaScript, React, Next.js, HTML, CSS, Node.js",
-    // education: "BSc in Software Engineering, University of Sunderland, 2025",
-    experience: "Frontend Intern at Afriment, 2024-present",
+    skills: "JavaScript, React, Next.js, HTML, CSS, Node.js,Excellent communication",
+   
+    experience: "Frontend Intern at Afriment, 2024-present ",
   };
 
   const handleDownload =()=>{
@@ -21,6 +21,7 @@ const ResumePage = () => {
 
   // Function to generate PDF
   const generatePDF = () => {
+
     const doc = new jsPDF();
 
     doc.setFontSize(22);
@@ -71,7 +72,7 @@ const ResumePage = () => {
       </button> */}
 
      <a href="/MyResume.pdf"
-     download='TaiwoKolapoResume'><button className='bg-[#FF7AC3] p-2 rounded-lg cursor-pointer hover:bg-[#AC1754]'>Download Resume</button></a> 
+     download='TaiwoKolapoResume'><button onClick={handleDownload} className='bg-[#FF7AC3] p-2 rounded-lg cursor-pointer hover:bg-[#AC1754]'>Download Resume</button></a> 
     </div>
   );
 };
