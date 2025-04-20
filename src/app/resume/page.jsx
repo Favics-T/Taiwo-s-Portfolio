@@ -8,7 +8,6 @@ const ResumePage = () => {
     name: "Kolapo Faith Taiwo.",
     email: "taiwopersonal24@example.com",
     skills: "JavaScript, React, Next.js, HTML, CSS, Node.js,Excellent communication",
-   
     experience: "Frontend Intern at Afriment, 2024-present ",
   };
 
