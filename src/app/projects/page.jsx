@@ -1,5 +1,5 @@
 import ProjectCard from "../../../components/ProjectCard"
-
+import Header from "../../../components/Header"
 
 
 const page = () => {
@@ -8,7 +8,7 @@ const page = () => {
       <div>
       {/* Header */}
       <div>
-        <h1 className="text-3xl text-[#7F5AF0]  font-extrabold">My Projects</h1>
+       <Header text='My Projects' />
       </div>
 
       {/* Project list */}

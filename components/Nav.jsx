@@ -19,13 +19,13 @@ const Nav = () => {
 
             {/* header components */}
             <ul className='grid grid-cols-3 gap-4'>
-      <Link href='/'><li className='hover:text-[#7F5AF0] hover:font-bold'>About</li></Link>  
+      <Link href='/about'><li className='hover:text-[#7F5AF0] hover:font-bold'>About</li></Link>  
       <Link href='/projects'><li className='hover:text-[#7F5AF0] hover:font-bold'>Projects</li></Link>  
       <Link href='/contact'><li className='hover:text-[#7F5AF0] hover:font-bold'>Contact</li></Link>  
              </ul>
 
       <div>
-      <Link href="/resume"><h1>Download Resume</h1></Link>  
+      <Link href="/resume"><h1> Resume</h1></Link>  
       </div>
         </div>
       
