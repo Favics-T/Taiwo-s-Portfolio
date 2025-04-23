@@ -45,31 +45,87 @@ const Contact = () => {
   return (
     <div className="flex justify-center items-center text-white">
 
-<div className=" h-96 w-[700px] my-10 shadow-lg rounded-3xl">
+<div className="  my-10 shadow-2xl rounded-2xl bg-[#0f051b] px-6  py-10 ">
 
-<div className="flex">
+<div className="flex gap-10">
 
-  <div>
-    <h1>Hire me</h1>
+  <div className="flex flex-col gap-10 w-3/4">
+    <div className="flex flex-col gap-2">
+    <h1 className={`text-4xl font-semibold  text-[#FF7AC3]`}>Hire me</h1>
+    <p className="text-[12px]">
+    Thank you for your interest in working with me! Please provide details about the role, project, or opportunity, including any specific requirements or timelines. I’ll get back to you promptly.
+    </p>
+    </div>
+   
 {/* form */}
-    <div>
-      <label htmlFor="">Full Name:</label>
+    <div className="w-full flex flex-col gap-4">
+
+      <div className="flex gap-10 w-full">
       <input
                 type="text"
                 name="name"
-                placeholder="Name"
+                placeholder="Name.."
                 value={formData.name}
                 onChange={handleInputChange}
-                className="bg-black w-[320px] rounded-md mr-2 p-1 border border-pink-100"
+                className=" w-[320px] rounded-md  p-1 border border-[#FF7AC3] "
               />
+
+<input
+                type="text"
+                name="name"
+                placeholder="Email.."
+                value={formData.name}
+                onChange={handleInputChange}
+                className=" w-[320px] rounded-md  p-1 border border-[#FF7AC3] "
+              />
+      </div>
+
+      <div className="flex gap-10 w-full">
+      <input
+                type="text"
+                name="name"
+                placeholder="Phone.."
+                value={formData.name}
+                onChange={handleInputChange}
+                className=" w-[320px] rounded-md  p-1 border border-[#FF7AC3] "
+              />
+
+<input
+                type="text"
+                name="name"
+                placeholder="Address.."
+                value={formData.name}
+                onChange={handleInputChange}
+                className=" w-[320px] rounded-md  p-1 border border-[#FF7AC3] "
+              />
+      </div>
+
+      <div>
+        <textarea 
+            type="text"
+            name="details"
+            placeholder="Detailed Details...."
+            className="border border-[#FF7AC3] w-3/4 h-40 p-2 rounded-2xl"
+        />
+      </div>
+
+      
+      
 
     </div>
   </div>
  
   <div>
 <ul>
-  <li>Phone</li>
-  <li>Email</li>
+  <div>
+    <h1>Phone</h1>
+    <FaPhone />
+  </div>
+
+  <div>
+    <h1>Email</h1>
+    <MdEmail />
+  </div>
 </ul>
   </div>
 
