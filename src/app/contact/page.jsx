@@ -45,7 +45,7 @@ const Contact = () => {
   return (
     <div className="flex justify-center items-center text-white">
 
-<div className="  my-10 shadow-2xl rounded-2xl bg-[#0f051b] px-6  py-10 ">
+<div className="mx-10 shadow-2xl rounded-2xl bg-[#0f051b] px-6  py-10 ">
 
 <div className="flex gap-10">
 
@@ -85,7 +85,7 @@ const Contact = () => {
                 type="text"
                 name="name"
                 placeholder="Phone.."
-                value={formData.name}
+                value={formData.phone}
                 onChange={handleInputChange}
                 className=" w-[320px] rounded-md  p-1 border border-[#FF7AC3] "
               />
@@ -94,7 +94,7 @@ const Contact = () => {
                 type="text"
                 name="name"
                 placeholder="Address.."
-                value={formData.name}
+                value={formData.address}
                 onChange={handleInputChange}
                 className=" w-[320px] rounded-md  p-1 border border-[#FF7AC3] "
               />
@@ -104,28 +104,44 @@ const Contact = () => {
         <textarea 
             type="text"
             name="details"
+            onChange={handleInputChange}
+            value={formData.details}
             placeholder="Detailed Details...."
             className="border border-[#FF7AC3] w-3/4 h-40 p-2 rounded-2xl"
         />
       </div>
 
-      
-      
+      <div>
+        <button className="bg-[#ff3ba7] hover:bg-[#ff3b45] cursor-pointer rounded-xl w-full text-center text-[19px] "
+        onClick={handleSubmit}>Submit</button>
+      </div>
+
+           
 
     </div>
   </div>
  
   <div>
-<ul>
-  <div>
+<ul className="flex flex-col mt-10 gap-4">
+  <div className="flex gap-4">
+    <div className="bg-[#FF7AC3] p-2 flex justify-center items-center">
+    <FaPhone className=" text-2xl"/>
+    </div>
+    <div>
     <h1>Phone</h1>
-    <FaPhone />
-  </div>
+    <p>+234 9063288467</p>
+    </div>
+    </div>
 
-  <div>
+    <div className="flex gap-4">
+    <div className="bg-[#FF7AC3] p-2 flex justify-center items-center">
+    <MdEmail className=" text-2xl"/>
+    </div>
+    <div>
     <h1>Email</h1>
-    <MdEmail />
-  </div>
+    <p>taiwopersonal24@gmail.com</p>
+    </div>
+    </div>
 </ul>
   </div>
 
