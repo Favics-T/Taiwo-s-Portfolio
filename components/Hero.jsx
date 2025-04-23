@@ -1,5 +1,5 @@
 import { Inter, Playfair_Display } from 'next/font/google';
-
+import Link from 'next/link';
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair' });
 
@@ -22,7 +22,9 @@ With years of experience in building fast, responsive, robust and visually appea
 If you need a perfect hands handling your software solutions, kindly shoot me a mail by clicking the button below.
             </h1>
 
-            <h1 className="bg-[#7f5af0 bg-[#FF7AC3] text-center p-2 rounded-lg shadow-lg hover:bg-[#965478] w-40">Get in Touch</h1>
+            <h1 className="cursor-pointer bg-[#7f5af0 bg-[#FF7AC3] text-center p-2 rounded-lg shadow-lg hover:bg-[#965478] w-40">
+              <Link href='/contact'>Get in Touch</Link>
+              </h1>
       
     </div>
   )
