@@ -12,26 +12,34 @@ const page = () => {
       </div>
 
       {/* Project list */}
-      <div className='mt-10'>
+      <div className='mt-10 flex flex-col gap-10'>
         <ProjectCard 
         description='P-gpt is a web application that allows users'
         imageSrc='/Image/image.png'
         imageAlt='pgpt imAGE'
+        projectTitle='PG-pt (Summarizer App)'
         link="https://favics-t.github.io/ai-translate"
         />
 
-      {/* <div className="flex">
-        <div className="border border-[#ae9ce5]  m-2 h-30 rounded-4xl  w-[650px]">
-          <p className='p-4'>P-Gpt is a web application that allow users translate, summarize and detect language, it was build with react js, this project helped me in solidifying my knowledge with asynchronus javascript and Api </p>
-        </div>
-        <div className='border w-[650px] -ml-[200px] h-30 border-[#ae9ce5] rounded-4xl '>
-          <Image src="/Image/image.png"
-          alt='phote o'
-          width={300}
-          height={300}/>
-        </div>
-      
-      </div> */}
+<ProjectCard 
+        description='P-gpt is a web application that allows users'
+        imageSrc='/Image/Techember.png'
+        imageAlt='pgpt imAGE'
+         projectTitle='Techember ticket'
+        link="https://favics-t.github.io/ai-translate"
+        />
+
+<ProjectCard 
+        description='P-gpt is a web application that allows users'
+        imageSrc='/Image/Geeks.png'
+        imageAlt='pgpt imAGE'
+        projectTitle='Geeks Store'
+        link="https://favics-t.github.io/ai-translate"
+        />
+
+        
+
+     
 
       </div>
 

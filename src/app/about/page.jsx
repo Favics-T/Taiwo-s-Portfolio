@@ -9,21 +9,21 @@ const About = () => {
 
 {/*sub heading */}
 <div>
-    <Header text='About Me'/>
+    <Header  text='About Me'/>
 </div>
 
 {/* body */}
-<div className='flex gap-20'>
+<div className='flex w-full justify-between px-24 '>
 
     {/* skills */}
-    <div className='grid grid-rows-2 gap-10  w-96'>
+    <div className='grid grid-rows-2  '>
         {/* contact starts here */}
-        <div>
+        <div className='text-[#d3c6fc]'>
        
-            <h2><span className=''>Name: </span>Kolapo Faith Taiwo</h2>
-            <h2><span className=''>Email: </span>taiwopersonal24@gmail.com</h2>
-            <h2><span className=''>Number: </span>+2349063288467</h2>
-            <h2><span className=''>Profile: </span>Web Developer</h2>
+            <h2 className={`text-justify text-[20px]`}><span className={`font-bold text-xl pr-2 text-justify `}>Name: </span>Kolapo Faith Taiwo</h2>
+            <h2 className={`text-justify text-[20px]`}><span className={`font-bold text-xl pr-2 `}>Email: </span>taiwopersonal24@gmail.com</h2>
+            <h2 className={`text-justify text-[20px]`}><span className={`font-bold text-xl pr-2 `}>Number: </span>+2349063288467</h2>
+            <h2 className={`text-justify text-[20px]`}><span className={`font-bold text-xl pr-2 `}>Profile: </span>Web Developer</h2>
             
         </div>
 
@@ -34,9 +34,9 @@ const About = () => {
             <h1 className='font-bold text-2xl grid grid-cols-4'>Skills</h1>
             </div>
 
-            <div>
+            <div className='flex flex-col gap-2'>
             <SkillRange 
-            skill='CSS'
+            skill='HTML'
             percentage='50%'
             />
            
@@ -47,6 +47,7 @@ const About = () => {
             />
 
             <SkillRange
+            skill='Javascript'
              />
 
 
@@ -63,8 +64,8 @@ const About = () => {
 
 
     {/* paragraph starts here */}
-    <div>
-        <p className='w-[700px] text-justify '>
+    <div className='w-1/2'>
+        <p className=' text-justify '>
         My Name is Kolapo Faith Taiwo, a Software Engineering Student in NIIT Port Harcourt.
 
 I am a Dedicated and detail-oriented Frontend Web Developer with a strong foundation in web development and a passion for creating user-friendly, innovative solutions. Seeking an opportunity to apply and grow technical skills in a challenging Frontend Web Development role.              
