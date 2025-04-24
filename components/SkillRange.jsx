@@ -5,10 +5,17 @@ const SkillRange = ({skill,percentage}) => {
     <div>
       
       <div className='text-[#FF7AC3]'>
-                <h2 className='font-bold'>{skill}</h2>
-                <h2 className='font-medium'>{percentage}</h2>
-                <div className='w-76 bg-[#ff7ac3] h-2'></div>
-            </div>
+        <div>
+        <h2 className='font-bold'>{skill}</h2>
+                <h2 className='font-medium'>{typeof percentage === 'number' ? `${percentage}%` : percentage}</h2>
+                <div className='w-76 bg-white rounded-lg  h-2'>
+                  <div className='h-full bg-[#ff7ac3]' 
+                  style={{width: typeof percentage === 'number' ? `${percentage}%` : percentage}}>
+
+                  </div>
+                </div>
+        </div>
+         </div>
     </div>
   )
 }
