@@ -13,10 +13,10 @@ const About = () => {
 </div>
 
 {/* body */}
-<div className='flex w-full justify-between px-24 '>
+<div className='flex w-full justify-between px-10 gap-20 '>
 
     {/* skills */}
-    <div className='grid grid-rows-2  '>
+    <div className='flex flex-col gap-10 w-[40%]  '>
         {/* contact starts here */}
         <div className='text-[#d3c6fc]'>
        
@@ -37,17 +37,19 @@ const About = () => {
             <div className='flex flex-col gap-2'>
             <SkillRange 
             skill='HTML'
-            percentage='50%'
+            percentage='85%'
             />
            
 
             <SkillRange 
             skill='CSS'
-            percentage='50%'
+            percentage='70%'
             />
 
             <SkillRange
             skill='Javascript'
+            percentage='65%'
+
              />
 
 
@@ -64,7 +66,7 @@ const About = () => {
 
 
     {/* paragraph starts here */}
-    <div className='w-1/2'>
+    <div className='w-[60%]'>
         <p className=' text-justify '>
         My Name is Kolapo Faith Taiwo, a Software Engineering Student in NIIT Port Harcourt.
 
